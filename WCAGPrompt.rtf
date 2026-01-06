@@ -1,0 +1,14 @@
+"Act as a Senior Full-Stack Developer specialized in digital accessibility. Create a fully functional web page that will be the  front end user interface for a WCAG website scanner using Node.js, Javascript, Puppeteer, and the axe-core engine.\
+Core Requirements:\
+URL Input: The tool must accept a target URL via command line or a simple web interface.\
+Automated Scanning: Use a browser to enter in the web site information that is to be scanned, navigate to the URL, and inject axe-core to perform a comprehensive audit against WCAG 2.1 Level AA standards.\
+Detailed Reporting: Generate a structured report ( HTML) that includes:\
+Issue Overview: Number of total issues and severity levels (Critical, Serious, Moderate, Minor).\
+Element Analysis: Specific HTML snippets that failed, their CSS selectors, and the impact on users.\
+Remediation Guidance: Clear descriptions of why each element failed and actionable steps to fix them based on WCAG success criteria.\
+Key Categories: Ensure the scanner specifically checks for:\
+Color Contrast: Text-to-background ratios.\
+Images: Missing or non-descriptive alt text.\
+Keyboard Accessibility: Focus indicators and tab order issues.\
+Semantic HTML: Proper heading levels and ARIA landmark usage.\
+Output: Provide the complete package.json configuration and an index.html file to run the scanner. Provide a web page report with the number of tests ran and passed along with any problems discovered. }
