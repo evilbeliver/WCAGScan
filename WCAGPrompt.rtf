@@ -11,4 +11,26 @@ Color Contrast: Text-to-background ratios.\
 Images: Missing or non-descriptive alt text.\
 Keyboard Accessibility: Focus indicators and tab order issues.\
 Semantic HTML: Proper heading levels and ARIA landmark usage.\
-Output: Provide the complete package.json configuration and an index.html file to run the scanner. Provide a web page report with the number of tests ran and passed along with any problems discovered. }
+Output: Provide the complete package.json configuration and an index.html file to run the scanner. Provide a web page report with the number of tests ran and passed along with any problems discovered.
+
+If using the prompt above, the following 2 areas of the code “showTab” function and the “Category Tabs” section in the index.html file needed to be updated due to a bad event listener.
+      
+  function showTab(category, clickedTab) {
+    // Update active tab
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    if (clickedTab) {
+        clickedTab.classList.add('active');
+    }
+
+<!-- Category Tabs -->
+    <div class="tabs-container">
+          <div class="tabs">
+                <button type="button" class="tab active" onclick="showTab('all', this)">All Issues</button>
+                <button type="button" class="tab" onclick="showTab('colorContrast', this)">Color Contrast</button>
+                <button type="button" class="tab" onclick="showTab('images', this)">Images</button>
+                <button type="button" class="tab" onclick="showTab('keyboard', this)">Keyboard</button>
+                <button type="button" class="tab" onclick="showTab('semanticHTML', this)">Semantic HTML</button>
+                <button type="button" class="tab" onclick="showTab('other', this)">Other</button>
+          </div>
+   </div>
