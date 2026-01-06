@@ -25,9 +25,8 @@ A comprehensive web accessibility scanner that tests websites against **WCAG 2.1
 
 ### Installation
 
-1. **Clone or navigate to the project directory:**
-   ```bash
-   cd /Users/davidcristinzio/Desktop/WCAGScan
+1. **Clone project directory:**
+   ```https://github.com/evilbeliver/WCAGScan/tree/main
    ```
 
 2. **Install dependencies:**
